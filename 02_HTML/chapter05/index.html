@@ -23,20 +23,10 @@
     </header>
     <div class="container">
         <script>
-            /*
-            // 日付を表示する
-            // 後で今日の日付に帰る
-            */
-           var answer = 10 + 3;
-            document.write('10+3の結果は、'+ answer +'です。');
-
-            answer=10-3;
-            document.write('10-3の結果は、'+ answer +'です。');
-
-            answer = answer + 10;
-            document.write('<br>' + answer);
-
-
+            var today = new Date();
+            var newYear = new Date(2019, 1, 1);
+            document.write('<p>今日は、' + today.getDate() + '日です。</p>')
+            document.write(Math.abs(-10))
 
         </script>
     </div>
