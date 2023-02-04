@@ -25,7 +25,14 @@
         </div>
     </div>
     <script>
-        document.getElementById('timer').innerHTML = '00:00:01';
+        var now = new Date();
+        var seconds = now.getSeconds(); //秒を取得
+
+        //0秒から9秒までの間だけ
+        if (seconds < 10) {
+            seconds = '0' + seconds;
+        }
+        document.getElementById('timer').innerHTML = seconds;
     </script>F
 </body>
 
